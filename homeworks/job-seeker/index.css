@@ -4,31 +4,89 @@
 }
 
 body {
-    height: 2000px;
+    height: 1000px;
+    padding: 35px 20px 35px 20px;
+    background-image: linear-gradient(to bottom right, #acb6e5, #74ebd5, #FFFFFF);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .menu {
-  position: fixed;
-  border: 2px solid #ccc;
-  width: 100%;
-  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
+  width: inherit;
+  height: 90px;
   z-index: 1;
-  background-color: white;
+  background-color: rgb(245, 229, 239);
+  box-shadow:10px 10px gray;
+}
+
+.menu img {
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 47px;
+  max-height: 47px;
 }
 
 .links {
   float: right;
   font-size: 22px;
-  line-height: 60px;
+  line-height: 75px;
+  font-family: Roboto;
 }
 
-.links > a {
+.links > a {/*o que é ">" ?*/
   padding: 5px 20px;
+  color: darkslategrey;
+  text-decoration: none;
 }
 
 .container {
   position: relative;
-  width: 100%;
-  top: 80px;
+  width: inherit;
+  margin-left: 30px;
+  margin-right: 30px;
+  top: 60px;
   text-align: center;
+}
+
+.container div{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20;
+  padding: 10px;
+}
+
+.empresas{
+  line-height: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.logos{
+  padding: 15px;
+  margin: 5px;
+  height: 450px;
+  width: 220px;
+  display: inline-block;
+  border-radius: 14px 0 15px 0;
+  background-color: darkslategrey;
+}
+.logos p{
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  color: beige;
+  text-align: justify;
+}
+
+.logos img{
+  display: block;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;/*quando não usado com px, qual a unidade de "medida" padrão?*/
+  border-radius: 100%;
+  object-fit: cover;
+  background-color: white;
 }
